@@ -53,7 +53,10 @@ class Book(models.Model):
 
 これも最初に上げたコードの再掲なのですが、
 例えばtitleやauthorというフィールドは、CharFieldを使ったものとして定義し、
-published_dateというフィールドには、DateFieldを指定し、priceというフィールドにはDecimalFiledというものを
+published_dateというフィールドには、DateFieldを指定し、priceというフィールドにはDecimalFiledというものを指定しています。
+
+また、それぞれのフィールドは、models.XxxxFiled()という形で書くのですが、()の中にFieldごとの様々な指定ができます。  
+例えば、models.CharField()では、max_length=xxxと書くことで最大の文字数を指定できます。  
 
 どんなFiledがあるかは、以下の記事などがおすすめですが、当然使用頻度には差が
 あり、よく使うやつから覚えていけばよいです。
